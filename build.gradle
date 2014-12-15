@@ -17,12 +17,12 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.1.0"
+version = newPowerRedVersions
 group = "cubewrench202.powerred.PowerRed"
 archivesBaseName = "Project Red"
 
 minecraft {
-    version = "1.7.10-10.13.2.1240"
+    version = forgeVersion
     runDir = "build"
     replace "@VERSION@", project.version
 }
