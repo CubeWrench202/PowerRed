@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
-import cubewrench202.powerred.PowerRed;
+import cubewrench202.powerred.common.PRBlocks;
 
 public class OreGeneration implements IWorldGenerator {
 
@@ -36,19 +36,19 @@ public class OreGeneration implements IWorldGenerator {
 		// generateOre(PowerRed.blockHerePlease, world, rand, x, z, minVeinSize,
 		// maxVeinSize, chance,
 		// minLevelSpawn, maxLevelSpawn, whereCanGenerate
-		generateOre(PowerRed.blockRubyOre, world, rand, x, z, 1, 3, 20, 0, 30,
+		generateOre(PRBlocks.blockRubyOre, world, rand, x, z, 1, 3, 20, 0, 30,
 				Blocks.stone);
-		generateOre(PowerRed.blockSapphireOre, world, rand, x, z, 1, 3, 20, 0,
+		generateOre(PRBlocks.blockSapphireOre, world, rand, x, z, 1, 3, 20, 0,
 				30, Blocks.stone);
-		generateOre(PowerRed.blockPeridiotOre, world, rand, x, z, 1, 3, 20, 0,
+		generateOre(PRBlocks.blockPeridiotOre, world, rand, x, z, 1, 3, 20, 0,
 				30, Blocks.stone);
-		generateOre(PowerRed.blockCopperOre, world, rand, x, z, 2, 5, 20, 0,
+		generateOre(PRBlocks.blockCopperOre, world, rand, x, z, 2, 5, 20, 0,
 				64, Blocks.stone);
-		generateOre(PowerRed.blockTinOre, world, rand, x, z, 2, 5, 20, 0, 55,
+		generateOre(PRBlocks.blockTinOre, world, rand, x, z, 2, 5, 20, 0, 55,
 				Blocks.stone);
-		generateOre(PowerRed.blockNikoliteOre, world, rand, x, z, 2, 6, 20, 0,
+		generateOre(PRBlocks.blockNikoliteOre, world, rand, x, z, 2, 6, 20, 0,
 				20, Blocks.stone);
-		generateOre(PowerRed.blockSilverOre, world, rand, x, z, 2, 5, 20, 0,
+		generateOre(PRBlocks.blockSilverOre, world, rand, x, z, 2, 5, 20, 0,
 				28, Blocks.stone);
 
 	}

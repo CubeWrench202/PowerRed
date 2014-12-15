@@ -2,12 +2,9 @@ package cubewrench202.powerred.blocks;
 
 import java.util.Random;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import cubewrench202.powerred.PowerRed;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import cubewrench202.powerred.common.PRBlocks;
 
 public class BlockBasalt extends Block {
 
@@ -17,6 +14,6 @@ public class BlockBasalt extends Block {
 		this.setHarvestLevel("pickaxe", 1);}	
 		
 		public Block getBlockDropped(int metadata, Random rand, int fortune) {
-			return PowerRed.blockBasaltCobblestone;
+			return PRBlocks.blockBasaltCobblestone;
 	}
 }
