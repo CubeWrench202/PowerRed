@@ -17,7 +17,7 @@ import cubewrench202.powerred.recipes.ShapedRecipes;
 import cubewrench202.powerred.recipes.SmeltingRecipes;
 import cubewrench202.powerred.world.OreGeneration;
 
-@Mod(modid = "pr", name = "PowerRed", version = "0.1.0")
+@Mod(modid = "pr", name = "PowerRed", version = "@VERSION@")
 public class PowerRed {
 
 	public static final Item.ToolMaterial PeridiotToolMaterial = EnumHelper
@@ -45,7 +45,6 @@ public class PowerRed {
 
 	@EventHandler
 	public void postinit(FMLPostInitializationEvent event) {
-
 	}
 
 	public static CreativeTabs tabPowerRedMachines = new CreativeTabs(
@@ -60,7 +59,7 @@ public class PowerRed {
 			"tabPowerRedItems") {
 		@Override
 		public Item getTabIconItem() {
-			return new ItemStack(PRItems.itemMotor).getItem();
+			return PRItems.itemMotor;
 		}
 	};
 
@@ -68,14 +67,14 @@ public class PowerRed {
 			"tabPowerRedWorld") {
 		@Override
 		public Item getTabIconItem() {
-			return new ItemStack(PRBlocks.blockBasaltBrick).getItem();
+			return Item.getItemFromBlock(PRBlocks.blockBasaltBrick);
 		}
 	};
 	public static CreativeTabs tabPowerRedTools = new CreativeTabs(
 			"tabPowerRedTools") {
 		@Override
 		public Item getTabIconItem() {
-			return new ItemStack(PRItems.itemScrewdriver).getItem();
+			return PRItems.itemScrewdriver;
 		}
 	};
-};
+}
