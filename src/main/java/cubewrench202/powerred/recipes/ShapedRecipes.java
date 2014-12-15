@@ -3,22 +3,34 @@ package cubewrench202.powerred.recipes;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cubewrench202.powerred.common.PRBlocks;
 import cubewrench202.powerred.common.PRItems;
 
 public class ShapedRecipes {
+	private static final String[] HELMET = new String[]{"XXX", "x x"};
+	private static final String[] CHESTPLATE = new String[]{"X X", "XXX", "XXX"};
+	private static final String[] LEGGINGS = new String[]{"XXX", "X X", "X X"};
+	private static final String[] BOOTS = new String[]{"X X", "X X"};
+	private static final String[] PICKAXE = new String[]{"XXX", " S ", " S "};
+	private static final String[] SWORD = new String[]{" X ", " X ", " S "};
+	private static final String[] SHOVEL = new String[]{"X", "S", "S"};
+	private static final String[] AXE = new String[]{"XX", "XS", " S"};
+	private static final String[] COMPACT_BLOCK = new String[]{"XXX", "XXX", "XXX"};
+	private static final String[] BRICKS = new String[]{"XX", "XX"};
+	
 	public static void addRecipes(){
-		GameRegistry.addRecipe(new ItemStack(PRBlocks.blockBasaltBrick), new Object[] {
-			"CC ", "CC ", "   ", 'C', PRBlocks.blockBasalt });
-	GameRegistry.addRecipe(new ItemStack(PRBlocks.blockBasaltChiseled),
-			new Object[] { "CC ", "CC ", "   ", 'C', PRBlocks.blockBasaltBrick });
-	GameRegistry.addRecipe(new ItemStack(PRBlocks.blockMarbleBrick), new Object[] {
-			"CC ", "CC ", "   ", 'C', PRBlocks.blockMarble });
-	GameRegistry.addRecipe(new ItemStack(PRItems.RubyPickaxe), new Object[] {
-			"CCC", " S ", " S ", 'C', PRItems.itemRuby, 'S', Items.stick });
-	GameRegistry.addRecipe(new ItemStack(PRItems.RubySword), new Object[] { " C ",
-			" C ", " S ", 'C', PRItems.itemRuby, 'S', Items.stick });
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockBasaltBrick), new Object[] {
+			BRICKS, 'X', PRBlocks.blockBasalt }));
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockBasaltChiseled),
+			new Object[] { BRICKS, 'X', PRBlocks.blockBasaltBrick }));
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockMarbleBrick), new Object[] {
+			BRICKS, 'X', PRBlocks.blockMarble }));
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyPickaxe), new Object[] {
+			PICKAXE, 'X', "gemRuby", 'S', "stickWood" }));
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubySword), new Object[] {
+			SWORD, 'X', "gemRuby", 'S', "stickWood" }));
 	GameRegistry.addRecipe(new ItemStack(PRItems.RubyAxe), new Object[] { " CC",
 			" SC", " S ", 'C', PRItems.itemRuby, 'S', Items.stick });
 	GameRegistry.addRecipe(new ItemStack(PRItems.RubyShovel), new Object[] { " C ",
