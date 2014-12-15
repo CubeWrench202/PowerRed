@@ -68,7 +68,7 @@ public class ShapedRecipes {
 			"SSS", " II", " DD", 'S', Items.stick, 'I', Items.iron_ingot,
 			'D', Items.diamond });
 	GameRegistry.addRecipe(new ItemStack(PRItems.itemScrewdriver), new Object[] {
-			"   ", " S ", "T  ", 'S', Items.iron_ingot, 'T', Items.stick });
+			"   ", "S  ", " T ", 'S', Items.iron_ingot, 'T', Items.stick });
 	GameRegistry.addRecipe(new ItemStack(PRItems.itemCanvas), new Object[] { "SSS",
 			"STS", "SSS", 'S', Items.string, 'T', Items.stick });
 	GameRegistry.addRecipe(new ItemStack(PRItems.itemCanvasBag), new Object[] {
