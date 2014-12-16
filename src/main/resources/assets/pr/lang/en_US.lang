@@ -1,3 +1,4 @@
+tile.BlockBlockBreaker.name=Block Breaker
 tile.BlockBasalt.name=Basalt
 tile.BlockMarble.name=Marble
 tile.BlockBasaltBrick.name=Basalt brick
@@ -52,7 +53,10 @@ item.ItemCanvasBag.name=Canvas Bag
 item.ItemCanvas.name=Canvas
 item.ItemDrawplate.name=Drawplate
 item.ItemWoolCard.name=Wool Card
-
+item.ItemBrassIngot.name=Brass Ingot
+item.ItemRedAlloyIngot.name=Red Alloy Ingot
+item.ItemBlueAlloyIngot.name=Blue Alloy Ingot
+itemGroup.tabPowerRedRedstoneMachines=Power Red Redstone Machines
 itemGroup.tabPowerRedWorld=Power Red World
 itemGroup.tabPowerRedItems=Power Red Items
 itemGroup.tabPowerRedTools=Power Red Tools

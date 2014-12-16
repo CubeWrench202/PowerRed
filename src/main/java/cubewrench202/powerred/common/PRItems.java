@@ -51,8 +51,8 @@ public class PRItems {
 	public static Item PeridiotShovel;
 	public static Item PeridiotAxe;
 	public static Item PeridiotHoe;
-	
-	public static void registerItems(){
+
+	public static void registerItems() {
 		itemWoolCard = new ItemWoolCard().setUnlocalizedName("ItemWoolCard")
 				.setTextureName("pr:Wool_Card")
 				.setCreativeTab(PowerRed.tabPowerRedItems);
@@ -60,8 +60,9 @@ public class PRItems {
 				.setTextureName("pr:Drawplate")
 				.setCreativeTab(PowerRed.tabPowerRedItems);
 		itemCanvas = new ItemCanvas().setUnlocalizedName("ItemCanvas")
-				.setTextureName("pr:Canvas").setCreativeTab(PowerRed.tabPowerRedItems);
-		
+				.setTextureName("pr:Canvas")
+				.setCreativeTab(PowerRed.tabPowerRedItems);
+
 		itemPeridiot = new PRItem("ItemPeridiot", "pr:Peridiot", "gemPeridiot");
 		itemRuby = new PRItem("ItemRuby", "pr:Ruby", "gemRuby");
 		itemFineIronWire = new ItemFineIronWire()
@@ -76,6 +77,18 @@ public class PRItems {
 				.setUnlocalizedName("ItemScrewdriver")
 				.setTextureName("pr:Screwdriver")
 				.setCreativeTab(PowerRed.tabPowerRedTools);
+		itemRedAlloyIngot = new ItemRedAlloyIngot()
+				.setUnlocalizedName("ItemRedAlloyIngot")
+				.setTextureName("pr:Red_Alloy_Ingot")
+				.setCreativeTab(PowerRed.tabPowerRedItems);
+		itemBlueAlloyIngot = new ItemBlueAlloyIngot()
+				.setUnlocalizedName("ItemBlueAlloyIngot")
+				.setTextureName("pr:Blue_Alloy_Ingot")
+				.setCreativeTab(PowerRed.tabPowerRedItems);
+		itemBrassIngot = new ItemBrassIngot()
+				.setUnlocalizedName("ItemBrassIngot")
+				.setTextureName("pr:Brass_Ingot")
+				.setCreativeTab(PowerRed.tabPowerRedItems);
 
 		itemSapphire = new PRItem("ItemSapphire", "pr:Sapphire", "gemSapphire");
 		RubyPickaxe = new ItemRubyPickaxe(PowerRed.RubyToolMaterial)
@@ -88,10 +101,12 @@ public class PRItems {
 				.setCreativeTab(PowerRed.tabPowerRedTools);
 		RubyAxe = new ItemRubyAxe(PowerRed.RubyToolMaterial)
 				.setUnlocalizedName("ItemRubyAxe")
-				.setTextureName("pr:Ruby_Axe").setCreativeTab(PowerRed.tabPowerRedTools);
+				.setTextureName("pr:Ruby_Axe")
+				.setCreativeTab(PowerRed.tabPowerRedTools);
 		RubyHoe = new ItemRubyHoe(PowerRed.RubyToolMaterial)
 				.setUnlocalizedName("ItemRubyHoe")
-				.setTextureName("pr:Ruby_Hoe").setCreativeTab(PowerRed.tabPowerRedTools);
+				.setTextureName("pr:Ruby_Hoe")
+				.setCreativeTab(PowerRed.tabPowerRedTools);
 		RubySword = new ItemRubySword(PowerRed.RubyToolMaterial)
 				.setUnlocalizedName("ItemRubySword")
 				.setTextureName("pr:Ruby_Sword")
@@ -136,10 +151,12 @@ public class PRItems {
 				.setUnlocalizedName("ItemSapphireSword")
 				.setTextureName("pr:Sapphire_Sword")
 				.setCreativeTab(PowerRed.tabPowerRedTools);
-		
-		itemCopperIngot = new PRItem("ItemCopperIngot", "pr:Copper_Ingot", "ingotCopper");
+
+		itemCopperIngot = new PRItem("ItemCopperIngot", "pr:Copper_Ingot",
+				"ingotCopper");
 		itemNikolite = new PRItem("ItemNikolite", "pr:Nikolite", "dustNikolite");
-		itemSilverIngot = new PRItem("ItemSilverIngot", "pr:Silver_Ingot", "ingotSilver");
+		itemSilverIngot = new PRItem("ItemSilverIngot", "pr:Silver_Ingot",
+				"ingotSilver");
 		itemTinIngot = new PRItem("ItemTinIngot", "pr:Tin_Ingot", "ingotTin");
 		itemAthame = new ItemAthame(PowerRed.AthameToolMaterial)
 				.setUnlocalizedName("ItemAthame").setTextureName("pr:Athame")
@@ -220,6 +237,12 @@ public class PRItems {
 				.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(itemDiamondHandsaw, itemDiamondHandsaw
 				.getUnlocalizedName().substring(5));
-		
+		GameRegistry.registerItem(itemBlueAlloyIngot, itemBlueAlloyIngot
+				.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemRedAlloyIngot, itemRedAlloyIngot
+				.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(itemBrassIngot, itemBrassIngot
+				.getUnlocalizedName().substring(5));
+
 	}
 }

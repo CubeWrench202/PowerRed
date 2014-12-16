@@ -55,16 +55,6 @@ public class PowerRed {
 	public void postinit(FMLPostInitializationEvent event) {
 	}
 
-	public static CreativeTabs tabPowerRedMachines = new CreativeTabs(
-			"tabPowerRedMachines") {
-
-		@Override
-        @SideOnly(Side.CLIENT)
-		public Item getTabIconItem() {
-			return Items.apple;
-		}
-
-	};
 
     public static CreativeTabs CREATIVE_TAB_RED_REDSTONE_MACHINES = new CreativeTabs("tabPowerRedRedstoneMachines") {
 
