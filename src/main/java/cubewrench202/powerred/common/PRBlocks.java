@@ -2,30 +2,13 @@ package cubewrench202.powerred.common;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cubewrench202.powerred.PowerRed;
-import cubewrench202.powerred.blocks.BlockBasalt;
-import cubewrench202.powerred.blocks.BlockBasaltBrick;
-import cubewrench202.powerred.blocks.BlockBasaltChiseled;
-import cubewrench202.powerred.blocks.BlockBasaltCobblestone;
-import cubewrench202.powerred.blocks.BlockBasaltPolished;
-import cubewrench202.powerred.blocks.BlockCopperBlock;
-import cubewrench202.powerred.blocks.BlockCopperOre;
-import cubewrench202.powerred.blocks.BlockMarble;
-import cubewrench202.powerred.blocks.BlockMarbleBrick;
-import cubewrench202.powerred.blocks.BlockNikoliteOre;
-import cubewrench202.powerred.blocks.BlockRubyOre;
-import cubewrench202.powerred.blocks.BlockSilerBlock;
-import cubewrench202.powerred.blocks.BlockSilverOre;
-import cubewrench202.powerred.blocks.BlockTinBlock;
-import cubewrench202.powerred.blocks.BlockTinOre;
-import cubewrench202.powerred.blocks.blockPeridiotBlock;
-import cubewrench202.powerred.blocks.blockPeridiotOre;
-import cubewrench202.powerred.blocks.blockRubyBlock;
-import cubewrench202.powerred.blocks.blockSapphireBlock;
-import cubewrench202.powerred.blocks.blockSapphireOre;
+import cubewrench202.powerred.blocks.*;
+import cubewrench202.powerred.tileentities.TileEntityBlockBreaker;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class PRBlocks {
+
 	public static Block blockCopperOre;
 	public static Block blockCopperBlock;
 	public static Block blockSilverOre;
@@ -46,7 +29,7 @@ public class PRBlocks {
 	public static Block blockSapphireBlock;
 	public static Block blockPeridiotOre;
 	public static Block blockPeridiotBlock;
-	public static Block blockBlockBreaker;
+	public static Block blockBlockBreaker = new BlockBlockBreaker();
 	public static Block blockAlloyFurnace;
 	public static Block blockBlockDeployer;
 	
@@ -169,5 +152,8 @@ public class PRBlocks {
 				.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(blockPeridiotBlock, blockPeridiotBlock
 				.getUnlocalizedName().substring(5));
+        GameRegistry.registerTileEntity(TileEntityBlockBreaker.class "blockBreaker");
+        GameRegistry.registerBlock(blockBlockBreaker, blockBlockBreaker
+                .getUnlocalizedName().substring(5));
 	}
 }
