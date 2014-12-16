@@ -24,81 +24,80 @@ public class ShapedRecipes {
 	public static void addRecipes(){
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockBasaltBrick), new Object[] {
 			BRICKS, 'X', PRBlocks.blockBasalt }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockBasaltChiseled),
-			new Object[] { BRICKS, 'X', PRBlocks.blockBasaltBrick }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockMarbleBrick), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockBasaltChiseled), new Object[] { 
+			BRICKS, 'X', PRBlocks.blockBasaltBrick }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockMarbleBrick), new Object[] {
 			BRICKS, 'X', PRBlocks.blockMarble }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyPickaxe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyPickaxe), new Object[] {
 			PICKAXE, 'X', "gemRuby", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubySword), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubySword), new Object[] {
 			SWORD, 'X', "gemRuby", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyAxe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyAxe), new Object[] {
 			AXE, 'X', "gemRuby", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyShovel), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyShovel), new Object[] {
 			SHOVEL, 'X', "gemRuby", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyHoe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.RubyHoe), new Object[] {
 			HOE, 'X', "gemRuby", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotPickaxe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotPickaxe), new Object[] {
 			PICKAXE, 'X', "gemPeridiot", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotSword), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotSword), new Object[] {
 			SWORD, 'X', "gemPeridiot", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotAxe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotAxe), new Object[] {
 			AXE, 'X', "gemPeridiot", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotShovel), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotShovel), new Object[] {
 			SHOVEL, 'X', "gemPeridiot", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotHoe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.PeridiotHoe), new Object[] {
 			HOE, 'X', "gemPeridiot", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphirePickaxe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphirePickaxe), new Object[] {
 			PICKAXE, 'X', "gemSapphire", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireSword), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireSword), new Object[] {
 			SWORD, 'X', "gemSapphire", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireAxe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireAxe), new Object[] {
 			AXE, 'X', "gemSapphire", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireShovel), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireShovel), new Object[] {
 			SHOVEL, 'X', "gemSapphire", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireHoe), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.SapphireHoe), new Object[] {
 			HOE, 'X', "gemSapphire", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockCopperBlock), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockCopperBlock), new Object[] {
 			COMPACT_BLOCK, 'X', "ingotCopper" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockTinBlock), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockTinBlock), new Object[] {
 			COMPACT_BLOCK, 'X', "ingotTin" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemAthame), new Object[] {
-			" I", "S ", 'S', "stickWood", 'I', "ingotSilver" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockSilverBlock), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockSilverBlock), new Object[] {
 			COMPACT_BLOCK, 'X', "ingotSilver" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemPeridiotHandsaw),
-			new Object[] { "SSS", " II", " PP", 'S', "stickWood", 'I',
-					"ingotIron", 'P', "gemPeridiot" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemSapphireHandsaw),
-			new Object[] { "SSS", " II", " ZZ", 'S', "stickWood", 'I',
-					"ingotIron", 'Z', "gemSapphire" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemRubyHandsaw), new Object[] {
-			"SSS", " II", " RR", 'S', "stickWood", 'I', "ingotIron",
-			'R', "gemRuby" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemIronHandsaw), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockRubyBlock), new Object[] {
+			COMPACT_BLOCK, 'X', "gemRuby" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockSapphireBlock), new Object[] {
+			COMPACT_BLOCK, 'X', "gemSapphire" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRBlocks.blockPeridiotBlock), new Object[] {
+			COMPACT_BLOCK, 'X', "gemPeridiot" }));	
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemAthame), new Object[] {
+			" I", "S ", 'S', "stickWood", 'I', "ingotSilver" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemPeridiotHandsaw), new Object[] { 
+			"SSS", " II", " PP", 'S', "stickWood", 'I', "ingotIron", 'P', "gemPeridiot" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemSapphireHandsaw),
+			new Object[] { "SSS", " II", " ZZ", 'S', "stickWood", 'I', "ingotIron", 'Z', "gemSapphire" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemRubyHandsaw), new Object[] {
+			"SSS", " II", " RR", 'S', "stickWood", 'I', "ingotIron", 'R', "gemRuby" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemIronHandsaw), new Object[] {
 			"SSS", " II", " II", 'S', "stickWood", 'I', "ingotIron" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemDiamondHandsaw), new Object[] {
-			"SSS", " II", " DD", 'S', "stickWood", 'I', "ingotIron",
-			'D', "gemDiamond" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemScrewdriver), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemDiamondHandsaw), new Object[] {
+			"SSS", " II", " DD", 'S', "stickWood", 'I', "ingotIron", 'D', "gemDiamond" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemScrewdriver), new Object[] {
 			"I  ", " S ", 'I', "ingotIron", 'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemCanvas), new Object[] { 
-		"SSS", "STS", "SSS", 'S', Items.string, 'T', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemCanvasBag), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemCanvas), new Object[] { 
+			"SSS", "STS", "SSS", 'S', Items.string, 'T', "stickWood" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemCanvasBag), new Object[] {
 			"SSS", "S S", "SSS", 'S', PRItems.itemCanvas }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemDrawplate), new Object[] {
-			" I ", "IDI", " I ", 'I', "blockIron", 'D',
-			"blockDiamond" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemFineCopperWire), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemDrawplate), new Object[] {
+			" I ", "IDI", " I ", 'I', "blockIron", 'D', "blockDiamond" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemFineCopperWire), new Object[] {
 			"CD ", 'C', "blockIron", 'D',
 			"blockDiamond" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemFineIronWire),
-			new Object[] { "CD ", 'C', "ingotIron", 'D',
-		PRItems.itemDrawplate }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemWoolCard), new Object[] {
-			"F  ", "W  ", "S  ", 'F', PRItems.itemFineIronWire, 'W', "plankWood",
-			'S', "stickWood" }));
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.string, 4), new Object[] {
-			"   ", "WL ", "   ", 'W', PRItems.itemWoolCard, 'L', Blocks.wool }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemFineIronWire), new Object[] { 
+			"CD ", 'C', "ingotIron", 'D', PRItems.itemDrawplate }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PRItems.itemWoolCard), new Object[] {
+			"F  ", "W  ", "S  ", 'F', PRItems.itemFineIronWire, 'W', "plankWood", 'S', "stickWood" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.string, 4), new Object[] {
+			"WL ", 'W', PRItems.itemWoolCard, 'L', Blocks.wool }));
 	}
 }
