@@ -77,18 +77,9 @@ public class PRItems {
 				.setUnlocalizedName("ItemScrewdriver")
 				.setTextureName("pr:Screwdriver")
 				.setCreativeTab(PowerRed.tabPowerRedTools);
-		itemRedAlloyIngot = new ItemRedAlloyIngot()
-				.setUnlocalizedName("ItemRedAlloyIngot")
-				.setTextureName("pr:Red_Alloy_Ingot")
-				.setCreativeTab(PowerRed.tabPowerRedItems);
-		itemBlueAlloyIngot = new ItemBlueAlloyIngot()
-				.setUnlocalizedName("ItemBlueAlloyIngot")
-				.setTextureName("pr:Blue_Alloy_Ingot")
-				.setCreativeTab(PowerRed.tabPowerRedItems);
-		itemBrassIngot = new ItemBrassIngot()
-				.setUnlocalizedName("ItemBrassIngot")
-				.setTextureName("pr:Brass_Ingot")
-				.setCreativeTab(PowerRed.tabPowerRedItems);
+		itemRedAlloyIngot = new PRItem("ItemRedAlloyIngot", "pr:Red_Alloy_Ingot", "ingotRedAlloy");
+		itemBlueAlloyIngot = new PRItem("ItemBlueAlloyIngot", "pr:Blue_Alloy_Ingot", "ingotBlueAlloy");
+		itemBrassIngot = new PRItem("ItemBrassIngot", "pr:Brass_Ingot", "ingotBrass");
 
 		itemSapphire = new PRItem("ItemSapphire", "pr:Sapphire", "gemSapphire");
 		RubyPickaxe = new ItemRubyPickaxe(PowerRed.RubyToolMaterial)
