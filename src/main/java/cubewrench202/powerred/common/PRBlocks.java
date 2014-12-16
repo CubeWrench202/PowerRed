@@ -152,7 +152,7 @@ public class PRBlocks {
 				.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(blockPeridiotBlock, blockPeridiotBlock
 				.getUnlocalizedName().substring(5));
-        GameRegistry.registerTileEntity(TileEntityBlockBreaker.class "blockBreaker");
+        GameRegistry.registerTileEntity(TileEntityBlockBreaker.class, "blockBreaker");
         GameRegistry.registerBlock(blockBlockBreaker, blockBlockBreaker
                 .getUnlocalizedName().substring(5));
 	}
