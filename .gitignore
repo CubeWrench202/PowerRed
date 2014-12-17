@@ -4,10 +4,13 @@
 .mtj.tmp/
 
 # Package Files #
-###*.jar ##Commented out for library files.
+*.jar
 *.war
 *.ear
 /bin/
+
+!./libs/801-Core-2.9.0-dev
+!./libs/801-Core-2.9.0-sources
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
