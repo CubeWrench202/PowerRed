@@ -4,6 +4,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cubewrench202.powerred.PowerRed;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
+
 /**
  * Used for basic item creation; crafting items.
  * 
@@ -18,7 +19,6 @@ public class PRItem extends Item{
 	 */
 	public PRItem(String unlocalizedName, String textureName, String oreDict){
 		super();
-		
 		this.setUnlocalizedName(unlocalizedName);
 		this.setCreativeTab(PowerRed.tabPowerRedItems);
 		this.setTextureName(textureName);

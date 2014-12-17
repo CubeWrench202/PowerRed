@@ -6,7 +6,7 @@ import cubewrench202.powerred.PowerRed;
 import cubewrench202.powerred.item.*;
 import cubewrench202.powerred.world.OreGeneration;
 
-public class PRItems {
+public final class PRItems {
 	public static Item itemFineIronWire;
 	public static Item itemFineCopperWire;
 	public static Item itemDrawplate;
@@ -234,6 +234,5 @@ public class PRItems {
 				.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(itemBrassIngot, itemBrassIngot
 				.getUnlocalizedName().substring(5));
-
 	}
 }

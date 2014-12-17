@@ -1,13 +1,16 @@
 package cubewrench202.powerred.common;
 
+import core.helpers.RegistryHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cubewrench202.powerred.PowerRed;
 import cubewrench202.powerred.blocks.*;
+import cubewrench202.powerred.itemblocks.ItemBlockRedstoneMachines;
 import cubewrench202.powerred.tileentities.TileEntityBlockBreaker;
+import cubewrench202.powerred.tileentities.TileEntityRedstoneMachine;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class PRBlocks {
+public final class PRBlocks {
 
 	public static Block blockCopperOre;
 	public static Block blockCopperBlock;
@@ -29,10 +32,9 @@ public class PRBlocks {
 	public static Block blockSapphireBlock;
 	public static Block blockPeridiotOre;
 	public static Block blockPeridiotBlock;
-	public static Block blockBlockBreaker = new BlockBlockBreaker();
 	public static Block blockAlloyFurnace;
-	public static Block blockBlockDeployer;
-	
+    public static final BlockRedstoneMachines BLOCK_REDSTONE_MACHINES = new BlockRedstoneMachines();
+
 	public static void registerBlocks(){
 		blockBasalt = new BlockBasalt(Material.rock)
 			.setBlockName("BlockBasalt").setBlockTextureName("pr:Basalt")
@@ -151,9 +153,10 @@ public class PRBlocks {
 		GameRegistry.registerBlock(blockPeridiotOre, blockPeridiotOre
 				.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(blockPeridiotBlock, blockPeridiotBlock
-				.getUnlocalizedName().substring(5));
-        GameRegistry.registerTileEntity(TileEntityBlockBreaker.class, "blockBreaker");
-        GameRegistry.registerBlock(blockBlockBreaker, blockBlockBreaker
                 .getUnlocalizedName().substring(5));
+        for(BlockRedstoneMachines.RedstoneMachines redstoneMachine: BlockRedstoneMachines.RedstoneMachines.values()) {
+            RegistryHelper.registerTileEntity(redstoneMachine.getRedstoneMachineClass(), redstoneMachine.getUnlocalisedName());//This ensures the class won't be registered twice.
+        }
+        GameRegistry.registerBlock(PRBlocks.BLOCK_REDSTONE_MACHINES, ItemBlockRedstoneMachines.class, "redstoneMachines");
 	}
 }
