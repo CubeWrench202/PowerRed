@@ -5,7 +5,7 @@ import core.helpers.ReflectionHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import cubewrench202.powerred.PowerRed;
-import cubewrench202.powerred.tileentities.redstone.TileEntityBlockBreaker;
+import cubewrench202.powerred.tileentities.redstone.machines.TileEntityBlockBreaker;
 import cubewrench202.powerred.tileentities.redstone.TileEntityRedstoneMachine;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.TextureMap;

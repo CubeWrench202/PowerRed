@@ -1,5 +1,6 @@
-package cubewrench202.powerred.tileentities.redstone;
+package cubewrench202.powerred.tileentities.redstone.machines;
 
+import cubewrench202.powerred.tileentities.redstone.TileEntityRedstoneMachine;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;

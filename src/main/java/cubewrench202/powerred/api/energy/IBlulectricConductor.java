@@ -15,4 +15,9 @@ public interface IBlulectricConductor extends IBlulectric {
 
     short getMaxAmps(int metadata);
 
+    /**
+     * @return The amount of amps you lose per conductor.
+     */
+    short getAmpLoss(int metadata);
+
 }
