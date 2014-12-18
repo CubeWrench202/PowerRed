@@ -5,8 +5,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cubewrench202.powerred.PowerRed;
 import cubewrench202.powerred.blocks.*;
 import cubewrench202.powerred.itemblocks.ItemBlockRedstoneMachines;
-import cubewrench202.powerred.tileentities.TileEntityBlockBreaker;
-import cubewrench202.powerred.tileentities.TileEntityRedstoneMachine;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

@@ -1,11 +1,8 @@
-package cubewrench202.powerred.tileentities;
+package cubewrench202.powerred.tileentities.redstone;
 
 import net.minecraft.block.Block;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.util.ForgeDirection;
 
 /**
  * Created by Master801 on 12/15/2014 at 6:08 PM.

@@ -1,4 +1,4 @@
-package cubewrench202.powerred.tileentities;
+package cubewrench202.powerred.tileentities.redstone;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

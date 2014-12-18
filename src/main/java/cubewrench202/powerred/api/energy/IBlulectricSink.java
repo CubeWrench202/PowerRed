@@ -7,9 +7,13 @@ package cubewrench202.powerred.api.energy;
  * </p>
  * @author Master801
  */
-public interface IBlulectricSink extends IBlulectricConnector {//TODO Need to work on this some more.
+public interface IBlulectricSink extends IBlulectric, IBlulectricConnector {//TODO Need to work on this some more.
 
     VoltageTypes getVoltage();
+
+    short getMaxCapacity();
+
+
 
     public static enum VoltageTypes {
 

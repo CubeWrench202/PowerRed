@@ -5,20 +5,11 @@ import core.helpers.ReflectionHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import cubewrench202.powerred.PowerRed;
-import cubewrench202.powerred.tileentities.TileEntityBlockBreaker;
-import cubewrench202.powerred.tileentities.TileEntityRedstoneMachine;
-import net.minecraft.block.BlockContainer;
-import net.minecraft.block.BlockPistonBase;
+import cubewrench202.powerred.tileentities.redstone.TileEntityBlockBreaker;
+import cubewrench202.powerred.tileentities.redstone.TileEntityRedstoneMachine;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.TextureMap;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.World;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Master801 on 12/15/2014 at 5:57 PM.

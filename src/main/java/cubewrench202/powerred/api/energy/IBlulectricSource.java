@@ -7,5 +7,5 @@ package cubewrench202.powerred.api.energy;
  * </p>
  * @author Master801
  */
-public interface IBlulectricSource extends IBlulectricConnector {//TODO Need to work on this more.
+public interface IBlulectricSource extends IBlulectric, IBlulectricConnector {//TODO Need to work on this more.
 }

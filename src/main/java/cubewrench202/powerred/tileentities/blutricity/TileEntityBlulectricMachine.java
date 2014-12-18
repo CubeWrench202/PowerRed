@@ -1,7 +1,8 @@
-package cubewrench202.powerred.tileentities;
+package cubewrench202.powerred.tileentities.blutricity;
 
 import cubewrench202.powerred.api.energy.IBlulectricConductor;
 import cubewrench202.powerred.api.energy.IBlulectricSink;
+import cubewrench202.powerred.tileentities.TileEntityPowerRed;
 import net.minecraftforge.common.util.ForgeDirection;
 
 /**

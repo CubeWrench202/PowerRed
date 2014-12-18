@@ -7,5 +7,12 @@ package cubewrench202.powerred.api.energy;
  * </p>
  * @author Master801
  */
-public interface IBlulectricConductor {//TODO Need to work on this some more.
+public interface IBlulectricConductor extends IBlulectric {
+
+    short getMaxResistance(int metadata);
+
+    IBlulectricSink.VoltageTypes getVoltageLevel(int metadata);
+
+    short getMaxAmps(int metadata);
+
 }
