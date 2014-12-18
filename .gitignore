@@ -9,6 +9,7 @@
 *.ear
 /bin/
 
+# Non maven-based dependencies
 !./libs/801-Core-2.9.0-dev
 !./libs/801-Core-2.9.0-sources
 
