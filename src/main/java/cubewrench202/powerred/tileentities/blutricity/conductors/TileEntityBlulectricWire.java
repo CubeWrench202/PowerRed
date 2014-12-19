@@ -11,13 +11,20 @@ import cubewrench202.powerred.tileentities.TileEntityWire;
 public class TileEntityBlulectricWire extends TileEntityWire implements IBlulectricConductor {
 
     @Override
-    public short getMaxResistance(int metadata) {
+    public short getMaxVoltageResistance(int metadata) {
         return 0;
     }
 
     @Override
-    public IBlulectricSink.VoltageTypes getVoltageLevel(int metadata) {
-        return null;
+    public VoltageTypes getVoltageType(int metadata) {
+        switch(metadata) {
+            case 0:
+                return VoltageTypes.LOW_VOLTAGE;
+            case 1:
+                return VoltageTypes.HIGH_VOLTAGE;
+            default:
+                return VoltageTypes.LOW_VOLTAGE;
+        }
     }
 
     @Override
@@ -26,8 +33,15 @@ public class TileEntityBlulectricWire extends TileEntityWire implements IBlulect
     }
 
     @Override
-    public short getAmpLoss(int metadata) {
-        return 0;
+    public float getConductorResistance(int metadata) {
+        switch(metadata) {
+            case 0:
+                return 0.01F;
+            case 1:
+                return 1.0F;
+            default:
+                return 1.0F;
+        }
     }
 
 }

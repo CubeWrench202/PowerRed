@@ -5,4 +5,19 @@ package cubewrench202.powerred.api.energy;
  * @author Master801
  */
 public interface IBlulectric {
+
+    short getMaxVoltageResistance(int metadata);
+
+    VoltageTypes getVoltageType(int metadata);
+
+    short getMaxAmps(int metadata);
+
+    public static enum VoltageTypes {
+
+        LOW_VOLTAGE,
+
+        HIGH_VOLTAGE;
+
+    }
+
 }

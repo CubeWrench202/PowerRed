@@ -1,5 +1,6 @@
 package cubewrench202.powerred.tileentities.redstone;
 
+import core.tileentity.TileEntityCoreBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -10,7 +11,7 @@ import net.minecraftforge.common.util.ForgeDirection;
  * Created by Master801 on 12/15/2014 at 6:08 PM.
  * @author Master801
  */
-public class TileEntityRedstoneMachine extends TileEntityPowerRed {
+public class TileEntityRedstoneMachine extends TileEntityCoreBase {
 
     private boolean isRedstonePowered = false;
 

@@ -2,6 +2,7 @@ package cubewrench202.powerred.tileentities.redstone.conductors;
 
 import core.api.tileentity.IRedstoneControl;
 import cubewrench202.powerred.tileentities.TileEntityWire;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.ForgeDirection;
 
 /**
@@ -10,14 +11,31 @@ import net.minecraftforge.common.util.ForgeDirection;
  */
 public class TileEntityRedstoneWire extends TileEntityWire implements IRedstoneControl {
 
+    private byte weakPower;
+    private byte strongPower;
+
     @Override
-    public int getWeakPower(ForgeDirection side) {
-        return 0;
+    public byte getWeakPower(ForgeDirection side) {
+        return weakPower;
     }
 
     @Override
-    public int getStrongPower(ForgeDirection side) {
-        return 0;
+    public byte getStrongPower(ForgeDirection side) {
+        return strongPower;
+    }
+
+    @Override
+    public void readFromNBT(NBTTagCompound nbt) {
+        super.readFromNBT(nbt);
+        weakPower = nbt.getByte("weak");
+        strongPower = nbt.getByte("strong");
+    }
+
+    @Override
+    public void writeToNBT(NBTTagCompound nbt) {
+        super.writeToNBT(nbt);
+        nbt.setByte("weak", weakPower);
+        nbt.setByte("strong", strongPower);
     }
 
 }

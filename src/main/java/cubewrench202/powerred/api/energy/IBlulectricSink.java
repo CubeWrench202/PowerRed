@@ -11,16 +11,6 @@ public interface IBlulectricSink extends IBlulectric, IBlulectricConnector {//TO
 
     VoltageTypes getVoltage();
 
-    short getMaxCapacity();
-
-
-
-    public static enum VoltageTypes {
-
-        LOW_VOLTAGE,
-
-        HIGH_VOLTAGE;
-
-    }
+    int getMaxVoltageCapacity();
 
 }

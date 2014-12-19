@@ -9,15 +9,6 @@ package cubewrench202.powerred.api.energy;
  */
 public interface IBlulectricConductor extends IBlulectric {
 
-    short getMaxResistance(int metadata);
-
-    IBlulectricSink.VoltageTypes getVoltageLevel(int metadata);
-
-    short getMaxAmps(int metadata);
-
-    /**
-     * @return The amount of amps you lose per conductor.
-     */
-    short getAmpLoss(int metadata);
+    float getConductorResistance(int metadata);
 
 }
