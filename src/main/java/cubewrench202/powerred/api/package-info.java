@@ -1,4 +1,4 @@
-@API(owner = "pr", apiVersion = "1", provides = "prAPI")
+@API(owner = "pr", apiVersion = "@APIVERSION", provides = "prAPI")
 /**
  * Please DO NOT distribute this API! Thank you very much.
  * Very basic api version numbering system: one is added each

@@ -1,4 +1,4 @@
-@API(owner = "pr", apiVersion = "1", provides = "prAPI")
+@API(owner = "pr", apiVersion = "@APIVERSION", provides = "prAPI")
 /**
  * @author cubewrench
  */

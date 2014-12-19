@@ -25,6 +25,7 @@ minecraft {
     version = forgeVersion
     runDir = "build"
 	replace "@VERSION@", project.version
+	replace "@APIVERSION", newPowerRedAPIVersion
 }
 
 dependencies {
